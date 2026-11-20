@@ -12,7 +12,7 @@ from torchvision.models import resnet50
 st.set_page_config(page_title="Intel Image Classification", page_icon="🖼️", layout="wide")
 
 CLASS_NAMES = ["buildings", "forest", "glacier", "mountain", "sea", "street"]
-MODEL_PATH = "artifacts/resnet50_intel.pth"
+MODEL_PATH = "artifacts/resnet50_intel.pt"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 @st.cache_resource
